@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit The Price - Homepage</title>
+	<meta name="description" content="The best place to buy on internet!">
+	<meta name="keywords" content="ecommerce, buy online, cheap website">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="ICT203 Group">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script>
+		function showHide(y) {
+			var x = document.getElementById(y);
+			if (x.style.display === "" || x.style.display === "none") {
+				x.style.display = "block";
+			} else {
+				x.style.display = "none";
+			}
+		}
+		function imgsRotate(y){
+			switch(y) {
+				case 1:
+					document.getElementById("imgsrotate").style.backgroundImage = "url('imgs/rotate1.jpg')";
+				break;
+				case 2:
+					document.getElementById("imgsrotate").style.backgroundImage = "url('imgs/rotate2.jpg')";
+				break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<nav class="top-menu">
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+			<div id="logo">Hit The Price logo</div>
+			<div id="banner"></div>
+			<img class="cart" src="imgs/cart.png" alt="Cart Image">
+			<div id="search">
+				<form>
+					<input type="search" id="fsearch" placeholder="Search here">
+				</form>
+				<span class="login">Login / Sign Up</span>
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li class="menu-categories" onclick="showHide('all-categories')">See All Categories</li>
+					<li class="menu-feat-cat">Computers</li>
+					<li class="menu-feat-cat">Eletronics</li>
+					<li class="menu-feat-cat">Books</li>
+					<li class="menu-feat-cat">Women's Clothing</li>
+					<li class="menu-feat-cat">Men's Clothing</li>
+				</ul>
+				<div id="all-categories">
+					<ul>
+						<li><h2><a href="#">Eletronics</a></h2></li>
+						<li><a href="#">Computers</a></li>
+						<li><a href="#">Video-Games</a></li>
+						<li><a href="#">TVs</a></li>
+						<li><a href="#">Speakers</a></li>
+					</ul>
+					<ul>
+						<li><h2><a href="#">Books</a></h2></li>
+						<li><a href="#">Best Sellers</a></li>
+						<li><a href="#">New Releases</a></li>
+						<li><a href="#">Trending Now</a></li>
+						<li><a href="#">Children's Books</a></li>
+					</ul>
+					<ul>
+						<li><h2><a href="#">Clothes</a></h2></li>
+						<li><a href="#">Women's Clothing</a></li>
+						<li><a href="#">Girls's Clothing</a></li>
+						<li><a href="#">Men's Clothing</a></li>
+						<li><a href="#">Boys's Clothing</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div id="imgsrotate">
+				<ul>
+					<li class="rotate-option" onclick="imgsRotate(1)">1</li>
+					<li class="rotate-option" onclick="imgsRotate(2)">2</li>
+				</ul>
+			</div>
+			<div class="product">
+				<h2>Today's Special</h2>
+				<ul>
+					<a href="#"><li><img src="imgs/products/product1.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product2.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product3.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product4.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product5.jpg"></li></a>
+				</ul>
+			</div>
+			<!--<br style="clear: both;">-->
+			<div class="product">
+				<h2>Tech Devices</h2>
+				<ul>
+					<a href="#"><li><img src="imgs/products/product3.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product5.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product1.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product2.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product4.jpg"></li></a>
+				</ul>
+			</div>
+			<div class="product">
+				<h2>Clothes Sale</h2>
+				<ul>
+					<a href="#"><li><img src="imgs/products/product5.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product4.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product2.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product3.jpg"></li></a>
+					<a href="#"><li><img src="imgs/products/product1.jpg"></li></a>
+				</ul>
+			</div>
+		</main>
+	</div>
+	<footer id="footer-bottom">
+		<div class="container">
+			<section>
+				<h2>About Us</h2>
+				<ul>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Jobs</a></li>
+					<li><a href="#">Policies</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Help</h2>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contacts</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</section>
+			<span class="copyright">Copyright © 2020</span>
+		</div>
+	</footer>
+</body>
+</html>
